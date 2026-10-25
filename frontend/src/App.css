@@ -1,0 +1,60 @@
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  justify-content: center;
+  gap: 5px;
+  margin: 24px auto;
+}
+
+.game-cell {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background: white;
+  color: #222;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.game-cell:disabled {
+  cursor: default;
+}
+
+.game-cell.winning-cell {
+  background: #b7efc5;
+}
+
+.game-controls,
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+button,
+select {
+  padding: 8px 12px;
+}
+
+.error-message {
+  color: #c62828;
+}
+
+.game-status {
+  font-size: 18px;
+  font-weight: bold;
+}
